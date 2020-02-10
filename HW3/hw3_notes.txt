@@ -1,9 +1,0 @@
-What I did:
-Test case 1:
-    - Created a filter around the paint can (width ~60 pixels, works well if little horizontal mvmt)
-        - This filter multiplies everything outside of that rectangular window by 0
-    - Converted the frames to grayscale in loop, applied the filter
-    - Finding the pixels in which the intensity of white is at max (255)
-        - picked the min index of y (the top-most because even with the horizontal filtering the whites were not
-          sufficiently localized to the flashlight)
-    - Threw out one frame that had intensity value less than 255 at the location of flashlight 
